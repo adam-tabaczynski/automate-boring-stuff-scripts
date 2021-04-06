@@ -24,7 +24,7 @@ capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
    'Montpelier', 'Virginia': 'Richmond', 'Washington': 'Olympia',
    'West Virginia': 'Charleston', 'Wisconsin': 'Madison', 'Wyoming': 'Cheyenne'}
 
-filesFolder = (Path.cwd() / 'quizFiles')
+filesFolder = (Path.cwd() / 'chapter_09//quizFiles')
 filesFolder.mkdir() # creates a folder
 
 # Generate 35 quiz files.
@@ -70,7 +70,7 @@ for quizNum in range(35):
 
 
     # TODO: Write the answer key to a file.
-        answerKeyFile.write(f"{questionNum + 1}.{'ABCD'[answerOptions.index(correctAnswer)]}")
+        answerKeyFile.write(f"{questionNum + 1}.{'ABCD'[answerOptions.index(correctAnswer)]}\n")
 
     quizFile.close()
     answerKeyFile.close()
