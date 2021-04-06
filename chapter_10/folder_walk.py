@@ -1,4 +1,4 @@
-import os
+import os, shutil, time
 
 for folder_name, subfolders, filenames in os.walk('C:\\Users\\adamt\\spam'):
   print('The current folder is ' + folder_name)
@@ -10,3 +10,5 @@ for folder_name, subfolders, filenames in os.walk('C:\\Users\\adamt\\spam'):
     print('FILE INSIDE ' + folder_name + ': ' + filename)
     
   print('')
+  
+time.sleep(10)
