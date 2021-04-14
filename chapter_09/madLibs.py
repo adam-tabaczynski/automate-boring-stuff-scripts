@@ -7,7 +7,7 @@ import pyinputplus as pyip
 import time
 
 # This creates a path to folder separated for this project
-filesFolder = (Path.cwd() / 'madLibsTexts')
+filesFolder = (Path.cwd() / 'chapter_09\\madLibsTexts')
 
 # Regexes created to found given word
 # and to found if currently checked word ends with a . , or some other sign.

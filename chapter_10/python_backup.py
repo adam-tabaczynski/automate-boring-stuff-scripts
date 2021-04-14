@@ -26,4 +26,4 @@ def python_backup(folder):
   backup_zip.close()
   print('Done.')
   
-python_backup('C:\\Users\\adamt\\Desktop\\projects-and-tutorials\\course-AtBSwP\\scripts')
+python_backup('C:\\Users\\adamt\\automate-boring-stuff-scripts')

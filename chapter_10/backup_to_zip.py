@@ -38,4 +38,4 @@ def backup_to_zip(folder):
   backup_zip.close()
   print('Done.')
   
-backup_to_zip('C:\\Users\\adamt\\Desktop\\projects-and-tutorials\\course-AtBSwP\\scripts')
+backup_to_zip('C:\\Users\\adamt\\automate-boring-stuff-scripts')

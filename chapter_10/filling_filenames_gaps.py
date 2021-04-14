@@ -14,7 +14,7 @@ import pyinputplus as pyip
 def filling_filenames_gaps(folder):
   
   folder = os.path.abspath(folder)
-  destination_folder = 'C:\\Users\\adamt\\Desktop\\projects-and-tutorials\\course-AtBSwP\\scripts\\chapter_10\\filled_filenames_files'
+  destination_folder = 'C:\\Users\\adamt\\automate-boring-stuff-scripts\\chapter_10\\filled_filenames_files'
   
   print('Welcome to the filenames numbering filler program!')
   print('Type in prefix and extension of a file, example: you have a files')
@@ -80,4 +80,4 @@ def filling_filenames_gaps(folder):
 # Checks number of gaps - counter all encounter of files, starting from minimal, change all occurences
 
 
-filling_filenames_gaps('C:\\Users\\adamt\\Desktop\\projects-and-tutorials\\course-AtBSwP\\scripts\\chapter_10\\missing_filenames_files')
+filling_filenames_gaps('C:\\Users\\adamt\\automate-boring-stuff-scripts\\chapter_10\\missing_filenames_files')
