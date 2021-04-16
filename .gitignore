@@ -1,2 +1,4 @@
 /chapter_09/quizFiles/
 .gitignore
+/automate_online-materials/
+*.xlsx
