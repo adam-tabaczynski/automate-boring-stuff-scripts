@@ -21,3 +21,17 @@ response.raise_for_status()
 
 # Uncomment to see the raw JSON text:
 print(response.text)
+
+# Load JSON data into a Python variable.
+weather_data = json.loads(response.text)
+
+# Print weather descriptions.
+w = weather_data['list']
+print('Current weather in %s: ' % (location))
+print(w[0]['weather'][0]['main'], '-', w[0]['weather'][0]['description'])
+print()
+print('Tomorrow:')
+print(w[1]['weather'][0]['main'], '-', w[1]['weather'][0]['description'])
+print()
+print('Day after tomorrow:')
+print(w[2]['weather'][0]['main'], '-', w[2]['weather'][0]['description'])
