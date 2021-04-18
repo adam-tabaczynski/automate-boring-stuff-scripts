@@ -27,9 +27,12 @@ for row in range(1, max_row):
     if cell_addr in inverted_cells_set and row != column:
       continue
     
-    temp = sheet[cell_addr].value
-    sheet[cell_addr] = sheet[inv_cell_addr].value
-    sheet[inv_cell_addr] = temp
+    # x,y = y.value, x.value; value swap
+    sheet[cell_addr], sheet[inv_cell_addr] = \
+      sheet[inv_cell_addr].value, sheet[cell_addr].value
+    # temp = sheet[cell_addr].value
+    # sheet[cell_addr] = sheet[inv_cell_addr].value
+    # sheet[inv_cell_addr] = temp
   
     
 wb.save('./chapter_13/inverted_table.xlsx')
