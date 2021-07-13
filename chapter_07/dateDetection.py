@@ -64,7 +64,7 @@ def loop_year_check(year):
 
 def validate_month_and_day(day, month, isLoopYear):
     months_with_30days = ['04', '06', '09', '11']
-     = ['01', '03', '05', '07', '08', '10', '12']
+    months_with_31days = ['01', '03', '05', '07', '08', '10', '12']
     
     if month in months_with_30days:
         if int(day) < 1 or int(day) > 30:
